@@ -45,6 +45,8 @@ Facilitar a visualização e análise de notas e frequência de alunos, oferecen
 ### 📥 1. Clonar o Repositório
 ```sh
   git clone https://github.com/julya-matias/Gerenciamento-notas.git
+```
+```sh
   cd gerenciamento-notas
 ```
 
@@ -53,6 +55,8 @@ Facilitar a visualização e análise de notas e frequência de alunos, oferecen
 #### Instalar dependências
 ```sh
   cd backend
+```
+```sh
   pip install -r requirements.txt
 ```
 
@@ -67,9 +71,10 @@ Facilitar a visualização e análise de notas e frequência de alunos, oferecen
 #### Instalar dependências
 ```sh
   cd frontend
+```
+```sh
   npm install
 ```
-
 #### Iniciar o frontend
 ```sh
   npm start
