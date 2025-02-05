@@ -25,7 +25,7 @@ Facilitar a visualização e análise de notas e frequência de alunos, oferecen
 2. **A frequência dos alunos é expressa em porcentagem.**
 3. **Os dados dos alunos são inseridos e armazenados no banco de dados SQLite.**
 4. **O backend Flask expõe endpoints para que o frontend possa buscar e manipular os dados.**
-5. **A média geral dos alunos é calculada considerando todas as disciplinas e todo o histórico de notas.**
+5. **A média geral dos alunos é calculada considerando todas as disciplinas e todo o histórico de notas (Isso significa que, caso o nome de um aluno seja repetido, as notas e médias serão geradas com base nesse histórico acumulado).**
 6. **Alunos com frequência abaixo de 75% são considerados em risco de reprovação.**
 
 ---

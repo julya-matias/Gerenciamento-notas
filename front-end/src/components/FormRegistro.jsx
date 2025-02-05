@@ -22,11 +22,9 @@ const FormRegistro = ({ aluno, setAluno }) => {
 
   const handleInputChange = (e, index = null) => {
     const { name, value } = e.target;
-    // Substitui qualquer ponto ou vírgula por nada
     const sanitizedValue = value.replace(/[.,]/g, '');
 
     if (name === "notas" && index !== null) {
-      // Permitir valor vazio para "apagar" a nota
       if (sanitizedValue === "" || validaNota(sanitizedValue)) {
         const updatedNotas = [...newAluno.notas];
         updatedNotas[index] = sanitizedValue;
@@ -35,7 +33,6 @@ const FormRegistro = ({ aluno, setAluno }) => {
         alert("Nota inválida! As notas devem ser números inteiros entre 0 e 10.");
       }
     } else if (name === "frequencia") {
-      // Permitir valor vazio para frequência
       if (sanitizedValue === "" || validaFrequencia(sanitizedValue)) {
         setNewAluno({ ...newAluno, frequencia: sanitizedValue });
       } else {

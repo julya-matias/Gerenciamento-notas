@@ -13,7 +13,7 @@ db = SQLAlchemy(app)
 class Nota(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     aluno_nome = db.Column(db.String(100), nullable=False)
-    nota = db.Column(db.Text, nullable=False)  # Armazena como string JSON
+    nota = db.Column(db.Text, nullable=False)  
     frequencia = db.Column(db.Float, nullable=False)
 
     def __repr__(self):
@@ -47,7 +47,7 @@ def get_alunos():
 @app.route('/apagar_registros', methods=['DELETE'])
 def apagar_registros():
     try:
-        Nota.query.delete() 
+        Nota.query.delete()
         db.session.commit()
         return jsonify({'message': 'Todos os registros foram apagados com sucesso!'}), 200
     except Exception as e:

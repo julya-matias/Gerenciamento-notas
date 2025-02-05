@@ -128,7 +128,7 @@ const Resultados = () => {
       try {
         await axios.delete("http://127.0.0.1:5000/apagar_registros");
         alert("Todos os registros foram apagados!");
-        setAlunos([]); 
+        setAlunos([]);
       } catch (error) {
         console.error("Erro ao apagar registros:", error);
         alert("Erro ao apagar registros.");
@@ -139,7 +139,7 @@ const Resultados = () => {
   if (alunos.length === 0) {
     return (
       <ResultsContainer>
-        <p>Carregando ou nenhum aluno cadastrado.</p>
+        <p>Nenhum aluno cadastrado.</p>
       </ResultsContainer>
     );
   }
